@@ -1,0 +1,119 @@
+body {
+    margin: 0 auto;
+    background-color: white;
+    font-family: "Russo One", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.div-h12 {
+    font-size: 2vw;
+    color: #AE0101;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+}
+
+.zareg {
+    width: 100%;
+}
+
+.zareg-all {
+    width: 100%;
+    height: 45vw;
+    background-color: #D7D7D7;
+    display: flex;
+    flex-direction: row;
+}
+
+.zareg-photo-ph {
+    height: 45vw;
+}
+
+.forma {
+    margin: 5vw auto;
+    width: 30vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    margin: auto;
+    width: 90%;
+    height: 3vw;
+    background-color: white;
+    color: gray;
+    border: 0.1vw solid white;
+    border-radius: 10vw;
+    padding-left: 1vw;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+
+.but {
+    margin: 2vw auto;
+    width: 18vw;
+    height: 2.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2vw solid white;
+    color: #AE0101;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.but:hover {
+    scale: 1.1;
+}
+
+p {
+    font-size: 0.8vw;
+    text-align: center;
+    color: #666F7E;
+}
+
+a {
+    color: #666F7E;
+}
+
+.dn {
+    display: none;
+}
+
+.db {
+    display: block;
+}
+
+@media (max-width: 450px) {
+    
+    .div-h1, .div-h12 {
+        font-size: 4vw;
+    }
+    .zareg-photo-ph {
+        display: none;
+    }
+    .zareg-all {
+        height: auto;
+    }
+    .forma {
+        width: 55vw;
+    }
+    input {
+        font-size: 3vw;
+        height: 5vw;
+    }
+    .but {
+        width: 38vw;
+        height: 4vw;
+        font-size: 3vw;
+    }
+    p {
+        font-size: 2vw;
+    }
+}

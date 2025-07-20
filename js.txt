@@ -1,0 +1,70 @@
+document.getElementById("login-form").classList.add("dn")
+
+
+function login() {
+    document.getElementById("registdiv").style.display="none"
+    document.getElementById("login-form").style.display="block"
+}
+
+function zareg(){
+    document.getElementById("registdiv").style.display="block"
+    document.getElementById("login-form").style.display="none"
+}
+
+
+let users = {
+    user: {
+        name: 'admin',
+        parol: 'admin',
+        email: ' '
+    }
+}
+
+let newuser = {
+        name: ' ',
+        parol: ' ',
+        email: ' '
+}
+
+let q=0;
+let user_name = 'user'
+
+function reg() {
+    q+=1
+    a=document.getElementById("login1").value
+    b=document.getElementById("pasw").value
+    c=document.getElementById("mail").value
+    d=document.getElementById("fio").value
+    f=document.getElementById("num").value
+    newobject=Object.create(newuser)
+    newobject.name=a
+    newobject.parol=b
+    newobject.email=c
+    newobject.fio=d
+    newobject.tele=f
+
+    let v=String(q)
+    let n=user_name+v
+    
+    users[n]=newobject
+    console.log(users)
+    window.localStorage.setItem("login222", a)
+    alert("Вы зарегистрировались!");
+}
+
+function vhod() {
+    j=0
+    a2=document.getElementById("login2").value
+    b2=document.getElementById("pasw2").value
+    for (let j in users) {
+        if(users[j].name==a2 && users[j].parol==b2) {
+            alert("Вы вошли!")
+            window.localStorage.setItem("login222", a2)
+            console.log()
+        }
+        else {
+          alert("Неправильный логин или пароль.")
+        }
+        j+=1
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КРЕПЁЖ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Bolts.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="zareg-all">
+        <div class="zareg-photo">
+            <img src="./zareg-photo.png" alt="" class="zareg-photo-ph">
+        </div>
+        <div class="zareg" id="zareg">
+
+          <div id="registdiv">
+            <div class="div-h12">Регистрация</div>
+                <form class="forma" id="register-form">
+                    <input type="text" id="login1" placeholder="Логин" required>
+                    <input type="password" id="pasw" placeholder="Пароль" required>
+                    <input type="text" placeholder="ФИО" id="fio">
+                    <input type="tel" placeholder="Телефон" id="num">
+                    <input type="email" id="mail" placeholder="Email" required>
+                    
+                    <div onclick="reg()" class="but">Зарегистрироваться</div>
+                    <p>Уже есть аккаунт? <a href="#login" onclick="login()">Войти</a></p>
+                </form>
+            </div>
+
+            <form class="forma" id="login-form">
+                <div class="div-h12">Вход</div>
+                <input type="text" id="login2" placeholder="Логин" required>
+                <input type="password" id="pasw2" placeholder="Пароль" required>
+                <!-- <div class="voiti-button"> -->
+                <div class="but" onclick="vhod()">Войти</div>
+                <!-- </div> -->
+                <p>Нет аккаунта? <a href="#register" onclick="zareg()">Зарегистрироваться</a></p>
+            </form>
+            <!-- <div class="div-h1">Зарегистрироваться</div>
+
+            <div class="forma">
+                <input type="text" placeholder="Логин" id="login">
+                <input type="password" placeholder="Пароль" id="pass">
+                <input type="text" placeholder="ФИО" id="fio">
+                <input type="tel" placeholder="Телефон" id="num">
+                <input type="email" placeholder="Email" id="mail">
+            </div>
+
+            <div class="but" onclick="otp()">Отправить</div> -->
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+</html>

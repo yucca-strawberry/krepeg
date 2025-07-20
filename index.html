@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КРЕПЁЖ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Bolts.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="./index.html" class="log">КРЕПЁЖ</a>
+        
+        <div class="div-tele">
+            <div class="a1"><img src="./Phone.png" alt="" class="tel">+7(918)-033-74-39</div>
+            <div class="a1"><img src="./Address.png" alt="" class="tel">пос. Знаменский, Светлая, 11/1</div>
+        </div>
+    </nav>
+    <!-- <a href="./index.html"class="logot2">КРЕПЁЖ</a> -->
+
+    <section class="glav">
+        <img src="./glavphoto.png" alt="" class="photo-glav">
+        <img src="./Construction.png" alt="" class="iconglav">
+        <div class="textglav">Продажа крепежных изделий и материалов <br> для кровли и заборов</div>
+        <a href="#tovaryakor"><img src="./str.png" alt="" class="strelka-glav"></a>
+    </section>
+
+    <section class="glav2">
+        
+        <div class="yakor">
+            <a href="#tovaryakor" class="a2">Товары</a>
+            <div class="palka"></div>
+            <a href="#graphik" class="a2">График</a>
+            <div class="palka"></div>
+            <a href="#zareg" class="a2">Зарегистрироваться</a>
+            <div class="palka"></div>
+            <a href="#gal" class="a2">Галерея</a>
+            <div class="palka"></div>
+            <a href="#kontakti" class="a2">Контакты</a>
+        </div>
+    </section>
+
+    <div class="div-h1" id="tovaryakor">Товары</div>
+
+    <div class="all-div-tovar">
+        <div class="tovar">
+          <img src="./1.png" alt="" class="photo-tovar">
+          <div class="text-tovar">Клеи</div>
+        </div>
+        <div class="tovar">
+          <img src="./2.png" alt="" class="photo-tovar">
+          <div class="text-tovar">Скобяные изделия</div>
+        </div>
+        <div class="tovar">
+          <img src="./3.png" alt="" class="photo-tovar">
+          <div class="text-tovar">Герметики</div>
+        </div>
+        <div class="bottom-row">
+            <div class="tovar">
+              <img src="./4.png" alt="" class="photo-tovar">
+              <div class="text-tovar">Замки крепёжные</div>
+            </div>
+            <div class="tovar">
+              <img src="./5.png" alt="" class="photo-tovar">
+              <div class="text-tovar">Доборные металические изделия</div>
+            </div>
+        </div>
+    </div>
+
+    <img src="./Group 9.png" alt="" class="group9">
+
+    <div class="div-h1" id="graphik">График работы</div>
+
+    <div class="graphik">
+        <div class="text">Пн-пт</div>
+        <div class="text">8:00 - 18:00 <span class="span-grap">без перерыва</span></div>
+        <div class="div-hr"></div>
+        <div class="text">Сб</div>
+        <div class="text">8:00 - 15:00 <span class="span-grap">без перерыва</span></div>
+        <div class="div-hr"></div>
+        <div class="text">Воскресенье - выходной</div>
+    </div>
+
+    <section class="zareg-all">
+        <div class="zareg-photo">
+            <img src="./zareg-photo.png" alt="" class="zareg-photo-ph">
+        </div>
+        <div class="zareg" id="zareg">
+
+          <div id="registdiv">
+            <div class="div-h12">Регистрация</div>
+                <form class="forma" id="register-form">
+                    <input type="text" id="login1" placeholder="Логин" required>
+                    <input type="password" id="pasw" placeholder="Пароль" required>
+                    <input type="text" placeholder="ФИО" id="fio">
+                    <input type="tel" placeholder="Телефон" id="num">
+                    <input type="email" id="mail" placeholder="Email" required>
+                    
+                    <div onclick="reg()" class="but">Зарегистрироваться</div>
+                    <p>Уже есть аккаунт? <a href="#login" onclick="login()">Войти</a></p>
+                </form>
+            </div>
+
+            <form class="forma" id="login-form">
+                <div class="div-h12">Вход</div>
+                <input type="text" id="login2" placeholder="Логин" required>
+                <input type="password" id="pasw2" placeholder="Пароль" required>
+                <!-- <div class="voiti-button"> -->
+                <div class="but" onclick="vhod()">Войти</div>
+                <!-- </div> -->
+                <p>Нет аккаунта? <a href="#register" onclick="zareg()">Зарегистрироваться</a></p>
+            </form>
+            <!-- <div class="div-h1">Зарегистрироваться</div>
+
+            <div class="forma">
+                <input type="text" placeholder="Логин" id="login">
+                <input type="password" placeholder="Пароль" id="pass">
+                <input type="text" placeholder="ФИО" id="fio">
+                <input type="tel" placeholder="Телефон" id="num">
+                <input type="email" placeholder="Email" id="mail">
+            </div>
+
+            <div class="but" onclick="otp()">Отправить</div> -->
+        </div>
+    </section>
+
+    <div class="div-h1" id="gal">Галерея</div>
+
+    <div class="slider-container">
+  <img src="./str1.png" alt="" class="strelka left-arrow" onclick="scrollL()">
+
+  <div class="slider">
+    <div class="all-grandprix" id="sliderContainer">
+      <div class="divprix-all">
+        <div class="div-photo-prix"><img src="./ph11.png" alt=""></div>
+      </div>
+
+      <div class="divprix-all">
+        <div class="div-photo-prix"><img src="./ph2.png" alt=""></div>
+      </div>
+
+      <div class="divprix-all">
+        <div class="div-photo-prix"><img src="./ph3.png" alt=""></div>
+      </div>
+
+      <div class="divprix-all">
+        <div class="div-photo-prix"><img src="./ph4.png" alt=""></div>
+      </div>
+
+      <div class="divprix-all">
+        <div class="div-photo-prix"><img src="./ph5.png" alt=""></div>
+      </div>
+
+      <div class="divprix-all">
+        <div class="div-photo-prix"><img src="./ph6.png" alt=""></div>
+      </div>
+
+      <div class="divprix-all">
+        <div class="div-photo-prix"><img src="./ph7.png" alt=""></div>
+      </div>
+
+      <div class="divprix-all">
+        <div class="div-photo-prix"><img src="./ph8.png" alt=""></div>
+      </div>
+
+      <div class="divprix-all">
+        <div class="div-photo-prix"><img src="./ph9.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  <img src="./str2.png" alt="" class="strelka right-arrow" onclick="scrollR()">
+</div>
+
+    <footer id="kontakti">
+        <div class="all-fot">
+            <div class="div-tele2">
+                <div class="nomer"><img src="./bigphone.png" alt="" class="tel2">Андрей &ensp; +7(918)-033-74-39</div>
+                
+                <div class="nomer"><img src="./bigphone.png" alt="" class="tel2">Иван &ensp; +7(988)-369-33-22</div>
+            </div>
+        </div>
+
+        <div class="div-hr-2"></div>
+        <div class="text-fot">©2025 All rights reserved</div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
